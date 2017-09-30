@@ -3,19 +3,21 @@
 #include<stdlib.h>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h> 
- int max=10;
+ #define  max=10;
 void llenar_matriz( int **matriz)
-{matriz= new int*[max];cd 
- for(int i=0;i<max;i++)
-	{ matriz[i]=new int[max];
-	}
-for(int i=0;i<max;i++)
-    {for(int j=0;j<max;j++)
-         {
-	  matriz[i][j]=rand()%100;F
-       
-	}
-    }
+{        matriz= new int*[max];
+	 int i;
+	 for(i=0;i<max;i++)
+		{ matriz[i]=new int[max];
+		}
+
+	for(int i=0;i<max;i++)
+	    {for(int j=0;j<max;j++)
+		 {
+		  matriz[i][j]=rand()%100;
+	       
+		}
+	    }
   
 }
 
@@ -36,7 +38,6 @@ for(int i=0;i<max;i++)
          }
     }
 }
-
 int main()
 {
   int **A;

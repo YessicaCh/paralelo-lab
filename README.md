@@ -1,2 +1,0 @@
-# paralelo-lab
-# paralelo-lab
